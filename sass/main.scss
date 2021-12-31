@@ -1,0 +1,9 @@
+/*abstracts: como consejo traer siempre las variables primero*/
+@import './abstracts/variables'; 
+
+/*base*/
+@import './base/resets';
+@import './base/base';
+
+/*layout*/
+@import './layout/header';

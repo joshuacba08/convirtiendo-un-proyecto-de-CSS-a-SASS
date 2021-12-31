@@ -1,0 +1,35 @@
+html {
+    font-size: 18px;
+    width: 100%;
+    min-width: 375px;
+    font-family: $font-barlow;
+}
+
+body {
+    position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-fraunces;
+    font-weight:900;
+}
+
+h2 {
+    font-size:1.8rem;
+}
+
+h3 {
+    font-size:1.6rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+h5 {
+    font-size: .8rem;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}

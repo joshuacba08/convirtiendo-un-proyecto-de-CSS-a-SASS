@@ -1,0 +1,23 @@
+{
+  "name": "sunnyside-landing-page",
+  "version": "1.0.0",
+  "description": "Migrando proyecto a SASS",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass":"node-sass sass/main.scss css/main.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuaniCaste23/Sunnyside-Landing-Page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JuaniCaste23/Sunnyside-Landing-Page/issues"
+  },
+  "homepage": "https://github.com/JuaniCaste23/Sunnyside-Landing-Page#readme",
+  "dependencies": {
+    "node-sass": "^7.0.0"
+  }
+}
