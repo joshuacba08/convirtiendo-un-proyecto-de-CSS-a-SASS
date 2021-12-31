@@ -1,0 +1,32 @@
+.service {
+    height:560px;
+    width:100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;   
+}
+
+.service.service--design {
+    background-image: url('../images/mobile/image-graphic-design.jpg');
+    color: $dark-desaturated-cyan;
+}
+
+.service.service--photography {
+    background-image: url('../images/mobile/image-photography.jpg');
+    color:$dark-blue;
+}
+
+.service__text-box {
+    position:absolute;
+    bottom:0;
+    left:calc(50% - 200px);
+    padding:60px 20px;
+    text-align: center;
+    max-width: 400px;
+}
+
+.service__text-box p {
+    font-size:0.9rem;
+    line-height:1.6rem;
+    margin-top:30px;
+}
