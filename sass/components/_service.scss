@@ -4,6 +4,11 @@
     background-size: cover;
     background-position: center;
     position: relative;   
+
+    
+    @media only screen and (min-width: $mediaDesktop-1500) {
+        height: 720px;
+    }
 }
 
 .service.service--design {
@@ -30,3 +35,40 @@
     line-height:1.6rem;
     margin-top:30px;
 }
+
+
+@media only screen and (min-width: $mediaTablet-420) {
+
+    .service.service--design {
+        background-image: url('../images/desktop/image-graphic-design.jpg');
+    }
+    
+    .service.service--photography {
+        background-image: url('../images/desktop/image-photography.jpg');
+    }
+
+}
+
+@media only screen and (min-width: $mediaDesktop-820) {
+
+    .services-container {
+        display: flex;
+    }
+
+    .service {
+        display:flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+    }
+
+    .service__text-box {
+        max-width: 350px;
+        left: calc(50% - 175px);
+    }
+
+    .service__text-box p {
+        font-size:0.8rem;
+        line-height:1.4rem;
+    }
+} 

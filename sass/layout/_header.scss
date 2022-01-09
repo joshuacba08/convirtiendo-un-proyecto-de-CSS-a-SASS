@@ -6,6 +6,10 @@
     background-repeat:no-repeat;
     min-height:560px; 
 
+    @media only screen and (min-width: $mediaTablet-640) {
+        height: 100vh;
+    }
+
     .nav-container {
         display:flex;
         justify-content: space-between;
@@ -41,18 +45,12 @@
             position:absolute;
             top: 108px;
             left: 0px;
-            /* animation-name:fade;
-            animation-duration: 500ms;
-            animation-fill-mode: forwards;
-            animation-timing-function: ease-in; */
             animation: fade 250ms forwards ease-in;
         }
 
     }
 
 }
-
-
 
 
 .mobile-menu__container {
@@ -133,7 +131,97 @@
         text-transform:uppercase;
         letter-spacing:5px;
         color: $just-white;
+
+        @media only screen and (min-width: $mediaTablet-640) {
+        
+            font-size: 3.0rem;
+            margin: 60px 0 10px 0;
+        
+        }    
     }
 
 }
 
+
+@media only screen and (min-width: $mediaDesktop-820) {
+
+    .hero-container h1{
+        display:flex;
+        margin: 30px 0 10px 0;
+        p {
+            font-size:3rem;
+            letter-spacing:8px;
+
+            &:first-child::after {
+                content:" ";
+                white-space: pre; /*Deja un espacio en blanco*/
+            }
+        }
+    } 
+
+    .header-container{
+        height:724px;
+        background-image: url('../images/desktop/image-header.jpg');
+
+        .nav-container{
+
+            .logo-container img {
+                width: 200px;
+                padding-left: 20px;
+            }
+    
+            .icon-menu{
+                display:none;
+            }
+
+
+            .mobile-menu {
+                display:block !important;
+                animation:none;
+                width:auto;
+                padding:0;
+                position:inherit;
+                top:inherit;
+                left:inherit;
+        
+                .mobile-menu__container{
+                    height:auto;
+                    background-color:transparent;
+                    &::before{
+                        display:none;
+                    }
+            
+                    .mobile-links-container {
+                        flex-direction:row;
+                        li {
+                            margin-left:40px;
+                            a {
+                                color:$just-white;
+                                font-size:1rem;
+                            }
+
+                            .contact-style {
+                                background-color: $just-white;
+                                &:hover {
+                                    color: $just-white;
+                                    background-color: hsla(168, 70%, 77%, 0.555); /*TODO ARREGLAR ESTO*/
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    } 
+}
+
+
+@keyframes fade {
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
+}

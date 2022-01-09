@@ -12,8 +12,15 @@ $very-dark-grayish-blue: hsl(213, 9%, 39%);
 $dark-grayish-blue: hsl(232, 10%, 55%);
 $grayish-blue: hsl(210, 4%, 67%);
 $just-white: #ffffff;
-/*typography*/
 
+/*typography*/
 $font-size: 1.8rem;
 $font-barlow: 'Barlow', sans-serif;
 $font-fraunces: 'Fraunces', serif;
+
+/*Breackpoints*/
+$mediaTablet-420: 420px;
+$mediaTablet-640:640px;
+$mediaTablet-768: 768px;
+$mediaDesktop-820:820px;
+$mediaDesktop-1500:1500px;
